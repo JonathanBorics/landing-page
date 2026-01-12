@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Default to Teen Theme (Dark Mode) as base, or handle via .dark class */
+/* We will use "class" strategy for dark mode manual toggle */
+
+:root {
+  /* ADULT THEME (Light Mode) */
+  --bg-primary: #FAFAFA;
+  --bg-secondary: #F0F0F0;
+  --bg-card: #FFFFFF;
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --accent-primary: #0D7377;
+  --accent-secondary: #14919B;
+  --accent-glow: transparent;
+  --gradient-from: #0D7377;
+  --gradient-to: #45B7D1;
+  --border-color: #E0E0E0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  /* TEEN THEME (Dark Mode) */
+  --bg-primary: #0D0D0D;
+  --bg-secondary: #1A1A1A;
+  --bg-card: #242424;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B0B0;
+  --accent-primary: #00FF88;
+  --accent-secondary: #FF00FF;
+  /* Glow is prominent in teen theme */
+  --accent-glow: rgba(0, 255, 136, 0.5);
+  --gradient-from: #00FF88;
+  --gradient-to: #00CCFF;
+  --border-color: #333333;
+  --shadow-color: rgba(0, 255, 136, 0.2);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans), sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
