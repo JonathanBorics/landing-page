@@ -117,6 +117,7 @@ export default function Home() {
           </motion.a>
 
           {/* QR Code Section for Expo Go (iOS & Android) */}
+          {/* QR Code Section for Expo Go (iOS & Android) - HIDDEN BY REQUEST
           <div className="flex flex-col items-center gap-4 mt-6 bg-[var(--bg-card)]/50 p-6 rounded-2xl border border-[var(--border-color)] backdrop-blur-sm max-w-sm">
             <div className="flex items-center gap-2 text-[var(--accent-primary)]">
               <span className="text-2xl">📱</span>
@@ -144,6 +145,7 @@ export default function Home() {
               </p>
             </div>
           </div>
+          */}
         </motion.div>
 
         <motion.div variants={itemVariants} className="mt-6 text-sm text-[var(--text-secondary)] font-medium">
