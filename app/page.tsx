@@ -116,17 +116,33 @@ export default function Home() {
             LETÖLTÉS ANDROIDRA
           </motion.a>
 
-          {/* QR Code Section */}
-          <div className="flex flex-col items-center gap-3 mt-4 bg-[var(--bg-card)]/50 p-6 rounded-2xl border border-[var(--border-color)] backdrop-blur-sm">
-            <p className="text-[var(--text-primary)] font-bold text-center">
-              Vagy scanneld be (iOS / Android):
-            </p>
-            <div className="bg-white p-2 rounded-xl shadow-lg">
-              <Image src="/qr-code.png" alt="Play QR Code" width={160} height={160} className="rounded-lg" />
+          {/* QR Code Section for Expo Go (iOS & Android) */}
+          <div className="flex flex-col items-center gap-4 mt-6 bg-[var(--bg-card)]/50 p-6 rounded-2xl border border-[var(--border-color)] backdrop-blur-sm max-w-sm">
+            <div className="flex items-center gap-2 text-[var(--accent-primary)]">
+              <span className="text-2xl">📱</span>
+              <p className="font-bold text-center text-[var(--text-primary)]">
+                iPhone felhasználóknak
+              </p>
             </div>
-            <p className="text-xs text-[var(--text-secondary)] text-center max-w-[200px]">
-              Töltsd le az <strong>Expo Go</strong> appot, és olvasd be ezt a kódot!
-            </p>
+            <div className="bg-white p-3 rounded-xl shadow-lg">
+              <Image src="/expo-qr.png" alt="Expo Go QR Code" width={180} height={180} className="rounded-lg" />
+            </div>
+            <div className="text-center">
+              <p className="text-sm text-[var(--text-secondary)] mb-2">
+                1. Töltsd le az <strong className="text-[var(--text-primary)]">Expo Go</strong> appot
+              </p>
+              <div className="flex gap-2 justify-center mb-3">
+                <a href="https://apps.apple.com/app/expo-go/id982107779" target="_blank" className="text-xs px-3 py-1 bg-[var(--bg-secondary)] rounded-full border border-[var(--border-color)] hover:scale-105 transition-transform">
+                  🍎 App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=host.exp.exponent" target="_blank" className="text-xs px-3 py-1 bg-[var(--bg-secondary)] rounded-full border border-[var(--border-color)] hover:scale-105 transition-transform">
+                  🤖 Play Store
+                </a>
+              </div>
+              <p className="text-sm text-[var(--text-secondary)]">
+                2. Olvasd be ezt a QR kódot az appon belül
+              </p>
+            </div>
           </div>
         </motion.div>
 
