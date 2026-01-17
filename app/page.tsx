@@ -106,7 +106,7 @@ export default function Home() {
 
         <motion.div variants={itemVariants} className="flex flex-col items-center gap-6">
           <motion.a
-            href="https://expo.dev/artifacts/eas/wa2Qx9Bp3nvVi9tFpWFXzk.apk"
+            href="https://expo.dev/artifacts/eas/iDimTdnrdi7UfJ1mXPEe49.apk"
             target="_blank"
             whileHover={{ scale: 1.10 }}
             whileTap={{ scale: 0.95 }}
