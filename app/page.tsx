@@ -106,7 +106,7 @@ export default function Home() {
 
         <motion.div variants={itemVariants} className="flex flex-col items-center gap-6">
           <motion.a
-            href="https://expo.dev/accounts/jimmy977/projects/mobile-app/builds/b29f904a-d497-4954-a614-0dfb290ae5c4"
+            href="https://expo.dev/accounts/jimmy977/projects/mobile-app/builds/a4f87975-8c20-4751-b20e-b4b466429103"
             target="_blank"
             whileHover={{ scale: 1.10 }}
             whileTap={{ scale: 0.95 }}
